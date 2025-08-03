@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Personal Blog</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1>Personal Blog</h1>
+      <ul class="article-list">
+        <% articles.forEach(article => { %>
+          <li>
+            <a href="/article/<%= article.id %>"><%= article.title %></a>
+            <span class="date"><%= article.date %></span>
+          </li>
+        <% }) %>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

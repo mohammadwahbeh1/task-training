@@ -1,0 +1,160 @@
+/* Base styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f2f5;
+  margin: 0;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: #333;
+}
+
+/* Layout container */
+.container {
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Card design */
+.card {
+  background: white;
+  padding: 24px 28px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 500px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.12);
+}
+
+/* Titles and headers */
+.card h1,
+.card h2 {
+  margin: 0 0 30px;
+  color: #2c3e50;
+  font-size: 22px;
+}
+
+/* Article list */
+.article-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.article-list li {
+  margin-bottom: 14px;
+}
+
+.article-list a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #0077cc;
+  transition: color 0.3s ease;
+}
+
+.article-list a:hover {
+  color: #005999;
+}
+
+.date {
+  display: block;
+  color: #888;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+/* Forms */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+input, textarea {
+  padding: 10px 14px;
+  font-size: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fafafa;
+  transition: border 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #0077cc;
+  outline: none;
+  background-color: #fff;
+}
+
+textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+/* Buttons */
+button,
+a.button {
+  padding: 10px 16px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+button:hover,
+a.button:hover {
+  background-color: #005999;
+}
+
+/* Admin actions */
+.admin-actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 15px;
+}
+
+.admin-actions a {
+  color: #0077cc;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.admin-actions a:hover {
+  text-decoration: underline;
+}
+
+.error-message {
+  color: #d9534f;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 20px 0;
+}
+
+.top-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: center;
+}
