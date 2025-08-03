@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>New Article</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h2>New Article</h2>
+      <form method="POST" action="/new">
+        <input name="title" placeholder="Article Title" required />
+        <input name="date" type="date" required />
+        <textarea name="content" placeholder="Content" required></textarea>
+        <button type="submit">Publish</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
